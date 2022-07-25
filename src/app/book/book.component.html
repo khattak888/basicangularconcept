@@ -1,0 +1,21 @@
+<h1>Book Component</h1>
+
+<hr>
+
+<table border="2" width="600" align="center" cellspacing="1" cellpadding="4">
+    <tr bgcolor="skyblue">
+        <td>title</td>
+        <td>author</td>
+        <td>pages</td>
+        <td>price</td>
+        
+        
+    </tr>
+    <tr *ngFor="let b of books">
+        <td>{{b.title}}</td>
+        <td>{{b.author}}</td>
+        <td>{{b.pages}}</td>
+        <td>{{b.price}}</td>
+
+    </tr>
+</table>

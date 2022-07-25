@@ -1,0 +1,18 @@
+<h1>*ngIf example</h1>
+
+<h2 *ngIf="isAvailable">My name is Bilal Khattak</h2>
+<br><br><br>
+
+<h1 *ngIf="isAvailable;else condition">Condition is true</h1>
+<ng-template #condition>
+    <h1>Condition is false</h1>
+</ng-template>
+
+<br><br><br>
+<h1 *ngIf="isAvailable;then condition1 else condition2">Condition is true</h1>
+<ng-template #condition1>
+    <h1>Condition is valid</h1>
+</ng-template>
+<ng-template #condition2>
+    <h1>Condition is invalid</h1>
+</ng-template>
